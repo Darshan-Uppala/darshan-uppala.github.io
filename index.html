@@ -1,3 +1,6 @@
+
+
+Darshan portfolio · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,7 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-
+ 
 :root{
   --navy:    #050A18;
   --navy2:   #0D1526;
@@ -29,22 +32,22 @@ html{scroll-behavior:smooth}
   --mono: 'JetBrains Mono', monospace;
   --body: 'Inter', sans-serif;
 }
-
+ 
 body{background:var(--navy);color:var(--white);font-family:var(--body);font-size:16px;line-height:1.65;overflow-x:hidden}
-
+ 
 /* canvas bg */
 #bg-canvas{
   position:fixed;inset:0;z-index:0;
   pointer-events:none;opacity:1
 }
-
+ 
 /* subtle dot grid on top */
 body::after{
   content:'';position:fixed;inset:0;
   background-image:radial-gradient(circle,rgba(124,58,237,.05) 1px,transparent 1px);
   background-size:28px 28px;pointer-events:none;z-index:1
 }
-
+ 
 /* ── NAV ── */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
@@ -65,7 +68,7 @@ nav{
   text-decoration:none;transition:background .2s;letter-spacing:.06em
 }
 .nav-hire:hover{background:var(--violet2)}
-
+ 
 /* ── HERO ── */
 .hero{
   position:relative;z-index:2;
@@ -109,7 +112,7 @@ nav{
 .btn-v:hover{background:var(--violet2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(124,58,237,.4)}
 .btn-o{background:transparent;color:var(--white);border:1px solid rgba(124,58,237,.5)}
 .btn-o:hover{border-color:var(--violet3);color:var(--violet3)}
-
+ 
 /* ── TERMINAL ── */
 .terminal{
   background:var(--navy2);border:1px solid var(--border);
@@ -152,7 +155,7 @@ nav{
   color:var(--slate)
 }
 .t-summary span{color:var(--green);font-weight:700}
-
+ 
 /* ── TICKER ── */
 .ticker{
   position:relative;z-index:2;
@@ -175,7 +178,7 @@ nav{
 }
 .ticker-dot{color:var(--amber);font-size:1rem}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
+ 
 /* ── SECTION BASE ── */
 section{position:relative;z-index:2}
 .section-inner{max-width:1200px;margin:0 auto;padding:5.5rem 2.5rem}
@@ -190,7 +193,7 @@ section{position:relative;z-index:2}
   font-family:var(--fn);font-size:clamp(1.8rem,3vw,2.8rem);
   font-weight:700;margin-bottom:3rem;letter-spacing:-.01em
 }
-
+ 
 /* ── EXPERIENCE ── */
 #experience{background:var(--navy)}
 .exp-wrap{display:grid;gap:1.5rem}
@@ -244,7 +247,7 @@ section{position:relative;z-index:2}
   border-radius:3px;background:var(--navy3);
   color:var(--slate);border:1px solid var(--border)
 }
-
+ 
 /* ── AI CARDS ── */
 #ai-work{background:var(--navy2)}
 .ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
@@ -281,7 +284,7 @@ section{position:relative;z-index:2}
   background:rgba(124,58,237,.15);color:var(--violet3);
   border:1px solid rgba(124,58,237,.3);letter-spacing:.06em
 }
-
+ 
 /* ── SKILLS ── */
 #skills{background:var(--navy)}
 .skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
@@ -313,7 +316,7 @@ section{position:relative;z-index:2}
   border-color:rgba(245,158,11,.3);color:var(--amber);
   background:rgba(245,158,11,.06)
 }
-
+ 
 /* ── METRICS ── */
 #metrics{background:var(--navy2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .metrics-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border)}
@@ -326,7 +329,7 @@ section{position:relative;z-index:2}
   color:var(--amber);line-height:1;display:block
 }
 .metric-l{font-size:.78rem;color:var(--slate);margin-top:.5rem;letter-spacing:.03em}
-
+ 
 /* ── CERTS ── */
 #certs{background:var(--navy)}
 .certs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
@@ -350,7 +353,7 @@ section{position:relative;z-index:2}
   color:var(--white);line-height:1.3
 }
 .cert-issuer{font-size:.75rem;color:var(--slate)}
-
+ 
 /* ── EDUCATION ── */
 #education{background:var(--navy2)}
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
@@ -371,7 +374,7 @@ section{position:relative;z-index:2}
 .edu-school{font-size:.85rem;color:var(--violet3);margin-bottom:.2rem}
 .edu-meta{font-family:var(--mono);font-size:.7rem;color:var(--amber);margin-bottom:1rem}
 .edu-body{font-size:.83rem;color:var(--slate);line-height:1.7}
-
+ 
 /* ── CONTACT ── */
 #contact{background:var(--navy);position:relative;overflow:hidden}
 #contact::before{
@@ -408,7 +411,7 @@ section{position:relative;z-index:2}
   transition:all .2s;letter-spacing:.04em
 }
 .c-link:hover{border-color:var(--violet);color:var(--violet3);transform:translateY(-2px)}
-
+ 
 /* ── FOOTER ── */
 footer{
   background:var(--navy2);border-top:1px solid var(--border);
@@ -417,32 +420,114 @@ footer{
   color:var(--slate);letter-spacing:.08em
 }
 footer span{color:var(--violet3)}
-
+ 
 /* ── ANIMATIONS ── */
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
 .fade-up.vis{opacity:1;transform:none}
-
+ 
 /* ── RESPONSIVE ── */
+/* ── TABLET (≤900px) ── */
 @media(max-width:900px){
-  .hero{grid-template-columns:1fr;gap:3rem;padding:7rem 1.5rem 3rem}
+  nav{padding:.85rem 1.25rem}
+  .nav-links{gap:1rem}
+  .nav-hire{display:none}
+ 
+  .hero{grid-template-columns:1fr;gap:2.5rem;padding:7rem 1.5rem 3rem}
+  .hero-name{font-size:clamp(2rem,8vw,3.2rem)}
+  .terminal{max-width:100%}
+ 
   .exp-card{grid-template-columns:1fr}
-  .exp-sidebar{border-right:none;border-bottom:1px solid var(--border);flex-direction:row;flex-wrap:wrap;align-items:center;gap:.75rem}
+  .exp-sidebar{
+    border-right:none;border-bottom:1px solid var(--border);
+    flex-direction:row;flex-wrap:wrap;align-items:center;gap:.75rem;
+    padding:1.25rem 1.5rem
+  }
   .exp-period{margin-top:0}
+  .exp-main{padding:1.25rem 1.5rem}
+ 
   .ai-grid{grid-template-columns:1fr 1fr}
   .skills-layout{grid-template-columns:1fr}
   .metrics-grid{grid-template-columns:repeat(3,1fr)}
   .certs-grid{grid-template-columns:1fr 1fr}
   .edu-grid{grid-template-columns:1fr}
-  nav{padding:.85rem 1.25rem}
-  .nav-links{gap:1rem}
-  .nav-hire{display:none}
+ 
+  .contact-inner{padding:4rem 1.5rem}
 }
+ 
+/* ── MOBILE (≤600px) ── */
 @media(max-width:600px){
-  .section-inner{padding:3.5rem 1.25rem}
-  .ai-grid{grid-template-columns:1fr}
+  /* nav: hide text links, keep logo + hire */
+  .nav-links{display:none}
+  .nav-hire{display:block;font-size:.68rem;padding:.35rem .8rem}
+ 
+  .hero{padding:6rem 1.25rem 2.5rem;gap:2rem}
+  .hero-name{font-size:clamp(1.8rem,10vw,2.8rem);line-height:1.1}
+  .hero-role{font-size:.75rem}
+  .hero-desc{font-size:.9rem}
+  .hero-tag{font-size:.65rem}
+  .btn{padding:.65rem 1.1rem;font-size:.8rem}
+ 
+  /* terminal: tighten up */
+  .terminal-body{padding:.9rem .9rem 1.1rem;min-height:200px}
+  .t-line{font-size:.7rem;gap:.4rem}
+  .t-title{font-size:.6rem}
+ 
+  /* ticker */
+  .ticker-item{font-size:.65rem;padding:0 1.5rem}
+ 
+  /* metrics: 2 cols */
   .metrics-grid{grid-template-columns:repeat(2,1fr)}
+  .metric-n{font-size:2rem}
+  .metric-l{font-size:.72rem}
+ 
+  /* sections */
+  .section-inner{padding:3rem 1.25rem}
+  .s-title{font-size:1.5rem;margin-bottom:2rem}
+ 
+  /* experience */
+  .exp-sidebar{padding:1rem 1.25rem;gap:.5rem}
+  .exp-company-name{font-size:.95rem}
+  .exp-main{padding:1rem 1.25rem}
+  .exp-role{font-size:.88rem;margin-bottom:.75rem}
+  .exp-bullets li{font-size:.82rem}
+  .pill{font-size:.58rem}
+ 
+  /* AI cards: 1 col */
+  .ai-grid{grid-template-columns:1fr}
+  .ai-card{padding:1.25rem}
+  .ai-name{font-size:.88rem}
+  .ai-desc{font-size:.8rem}
+ 
+  /* skills */
+  .skill-group{padding:1.1rem}
+  .stag{font-size:.75rem}
+ 
+  /* certs: 1 col */
   .certs-grid{grid-template-columns:1fr}
+  .cert-card{padding:1.1rem;flex-direction:row;align-items:center;gap:.85rem}
+  .cert-icon{font-size:1.2rem;margin:0}
+  .cert-name{font-size:.8rem}
+ 
+  /* education */
+  .edu-card{padding:1.25rem}
+  .edu-deg{font-size:.9rem}
+ 
+  /* contact */
+  .contact-inner{padding:3rem 1.25rem}
+  .contact-title{font-size:1.6rem}
+  .c-link{font-size:.7rem;padding:.6rem 1rem}
+  .contact-links{flex-direction:column;align-items:center}
+ 
+  footer{font-size:.6rem;padding:1rem 1.25rem}
 }
+ 
+/* ── SMALL PHONES (≤380px) ── */
+@media(max-width:380px){
+  .hero-name{font-size:1.65rem}
+  .metrics-grid{grid-template-columns:1fr 1fr}
+  .metric-n{font-size:1.7rem}
+}
+ 
 @media(prefers-reduced-motion:reduce){
   .fade-up{opacity:1;transform:none;transition:none}
   .ticker-track{animation:none}
@@ -451,10 +536,10 @@ footer span{color:var(--violet3)}
 </style>
 </head>
 <body>
-
+ 
 <!-- BACKGROUND CANVAS -->
 <canvas id="bg-canvas"></canvas>
-
+ 
 <!-- NAV -->
 <nav>
   <span class="nav-logo">DSR<span>.</span>UPPALA</span>
@@ -467,7 +552,7 @@ footer span{color:var(--violet3)}
   </ul>
   <a href="mailto:darshansaireddy.uppala@outlook.com" class="nav-hire">HIRE ME</a>
 </nav>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
@@ -480,7 +565,7 @@ footer span{color:var(--violet3)}
       <a href="https://www.linkedin.com/in/darshansaireddyuppala/" target="_blank" class="btn btn-o">LinkedIn ↗</a>
     </div>
   </div>
-
+ 
   <!-- LIVE TERMINAL -->
   <div class="terminal" id="term">
     <div class="terminal-bar">
@@ -505,7 +590,7 @@ footer span{color:var(--violet3)}
     </div>
   </div>
 </div>
-
+ 
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-track" id="ticker">
@@ -528,7 +613,7 @@ footer span{color:var(--violet3)}
     <div class="ticker-item"><span class="ticker-dot">◆</span> BEST EMPLOYEE OF THE YEAR · ZENQ</div>
   </div>
 </div>
-
+ 
 <!-- METRICS -->
 <section id="metrics">
   <div class="metrics-grid">
@@ -539,14 +624,14 @@ footer span{color:var(--violet3)}
     <div class="metric-cell fade-up"><span class="metric-n">40%</span><p class="metric-l">Testing Time Reduced</p></div>
   </div>
 </section>
-
+ 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-inner">
     <p class="s-label">Experience</p>
     <h2 class="s-title">Where I've Made Impact</h2>
     <div class="exp-wrap">
-
+ 
       <div class="exp-card fade-up">
         <div class="exp-sidebar">
           <div class="exp-company-name">AMCS Group</div>
@@ -572,7 +657,7 @@ footer span{color:var(--violet3)}
           </div>
         </div>
       </div>
-
+ 
       <div class="exp-card fade-up">
         <div class="exp-sidebar">
           <div class="exp-company-name">ZenQ</div>
@@ -596,11 +681,11 @@ footer span{color:var(--violet3)}
           </div>
         </div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- AI WORK -->
 <section id="ai-work">
   <div class="section-inner">
@@ -652,7 +737,7 @@ footer span{color:var(--violet3)}
     </div>
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-inner">
@@ -735,7 +820,7 @@ footer span{color:var(--violet3)}
     </p>
   </div>
 </section>
-
+ 
 <!-- CERTIFICATIONS -->
 <section id="certs">
   <div class="section-inner">
@@ -769,7 +854,7 @@ footer span{color:var(--violet3)}
     </div>
   </div>
 </section>
-
+ 
 <!-- EDUCATION -->
 <section id="education">
   <div class="section-inner">
@@ -791,7 +876,7 @@ footer span{color:var(--violet3)}
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
@@ -805,9 +890,9 @@ footer span{color:var(--violet3)}
     </div>
   </div>
 </section>
-
+ 
 <footer>© 2026 <span>Darshan Sai Reddy Uppala</span> — Built with code, not a template. · Hounslow, London, UK</footer>
-
+ 
 <script>
 // ── TERMINAL TYPEWRITER ──
 const lines = [
@@ -816,13 +901,13 @@ const lines = [
   {icon:'i4',text:true},{icon:'i5',text:true},{icon:'i6',text:true},
   {icon:'i7',text:true},{icon:'l8',text:false},{summary:true}
 ];
-
+ 
 const ids = [
   ['l0'],['i1','l1'],['i2','l2'],['i3','l3'],
   ['i4','l4'],['i5','l5'],['i6','l6'],['i7','l7'],
   ['l8'],['summary']
 ];
-
+ 
 let step = 0;
 function revealNext() {
   if (step >= ids.length) return;
@@ -833,10 +918,10 @@ function revealNext() {
   step++;
   setTimeout(revealNext, step === 1 ? 600 : 420);
 }
-
+ 
 // Start terminal after short delay
 setTimeout(revealNext, 800);
-
+ 
 // ── SCROLL FADE-UP ──
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -846,12 +931,12 @@ const io = new IntersectionObserver(entries => {
     }
   });
 }, {threshold: 0.1});
-
+ 
 document.querySelectorAll('.fade-up').forEach((el, i) => {
   el.style.transitionDelay = (i % 4) * 80 + 'ms';
   io.observe(el);
 });
-
+ 
 // ── METRIC COUNTER ANIMATION ──
 const metricEls = document.querySelectorAll('.metric-n');
 const metricIo = new IntersectionObserver(entries => {
@@ -880,14 +965,14 @@ const metricIo = new IntersectionObserver(entries => {
     requestAnimationFrame(tick);
   });
 }, {threshold: 0.5});
-
+ 
 metricEls.forEach(el => metricIo.observe(el));
 // ── NEURAL NETWORK BACKGROUND ──
 (function () {
   const canvas = document.getElementById('bg-canvas');
   const ctx    = canvas.getContext('2d');
   let W, H;
-
+ 
   // ── palette
   const C = {
     violet : [124, 58,  237],
@@ -897,18 +982,18 @@ metricEls.forEach(el => metricIo.observe(el));
     navy   : [  5,  10,  24],
   };
   const rgba = ([r,g,b], a) => `rgba(${r},${g},${b},${a})`;
-
+ 
   // ── layer structure (columns across screen)
   const LAYER_SIZES = [4, 7, 9, 9, 7, 4];
   let layers = [];   // layers[l][n] = {x,y,activation,bias}
   let pulses = [];   // travelling signals on edges
-
+ 
   function resize() {
     W = canvas.width  = window.innerWidth;
     H = canvas.height = window.innerHeight;
     buildNetwork();
   }
-
+ 
   function buildNetwork() {
     layers = [];
     const totalLayers = LAYER_SIZES.length;
@@ -916,7 +1001,7 @@ metricEls.forEach(el => metricIo.observe(el));
     const usableW = W - padX * 2;
     const padY = H * 0.1;
     const usableH = H - padY * 2;
-
+ 
     for (let l = 0; l < totalLayers; l++) {
       const n = LAYER_SIZES[l];
       const x = padX + (l / (totalLayers - 1)) * usableW;
@@ -934,7 +1019,7 @@ metricEls.forEach(el => metricIo.observe(el));
       layers.push(nodes);
     }
   }
-
+ 
   // spawn a pulse along a random forward edge
   function spawnPulse() {
     const l = Math.floor(Math.random() * (layers.length - 1));
@@ -942,14 +1027,14 @@ metricEls.forEach(el => metricIo.observe(el));
     const b = Math.floor(Math.random() * layers[l + 1].length);
     pulses.push({ l, a, b, t: 0, speed: 0.004 + Math.random() * 0.004 });
   }
-
+ 
   // boot pulses
   for (let i = 0; i < 18; i++) setTimeout(spawnPulse, i * 220);
   setInterval(spawnPulse, 260);
-
+ 
   let mouse = { x: -9999, y: -9999 };
   window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
-
+ 
   function drawEdges() {
     for (let l = 0; l < layers.length - 1; l++) {
       for (const a of layers[l]) {
@@ -964,21 +1049,21 @@ metricEls.forEach(el => metricIo.observe(el));
       }
     }
   }
-
+ 
   function drawPulses() {
     const dead = [];
     for (let i = 0; i < pulses.length; i++) {
       const p = pulses[i];
       p.t += p.speed;
       if (p.t >= 1) { dead.push(i); continue; }
-
+ 
       const a = layers[p.l][p.a];
       const b = layers[p.l + 1][p.b];
       if (!a || !b) { dead.push(i); continue; }
-
+ 
       const px = a.x + (b.x - a.x) * p.t;
       const py = a.y + (b.y - a.y) * p.t;
-
+ 
       // glow trail
       const grad = ctx.createRadialGradient(px, py, 0, px, py, 10);
       grad.addColorStop(0,   rgba(C.lavend, 0.9));
@@ -988,13 +1073,13 @@ metricEls.forEach(el => metricIo.observe(el));
       ctx.arc(px, py, 10, 0, Math.PI * 2);
       ctx.fillStyle = grad;
       ctx.fill();
-
+ 
       // bright core dot
       ctx.beginPath();
       ctx.arc(px, py, 2.5, 0, Math.PI * 2);
       ctx.fillStyle = rgba(C.lavend, 1);
       ctx.fill();
-
+ 
       // highlight the edge while pulse travels
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
@@ -1006,22 +1091,22 @@ metricEls.forEach(el => metricIo.observe(el));
     // remove dead pulses back-to-front
     for (let i = dead.length - 1; i >= 0; i--) pulses.splice(dead[i], 1);
   }
-
+ 
   function drawNodes(ts) {
     for (let l = 0; l < layers.length; l++) {
       for (const n of layers[l]) {
         // slow breathing activation
         const act = 0.35 + 0.35 * Math.sin(ts * 0.0006 + n.phase);
-
+ 
         // mouse proximity boost
         const dx = mouse.x - n.x, dy = mouse.y - n.y;
         const md = Math.sqrt(dx*dx + dy*dy);
         const boost = md < 200 ? (1 - md / 200) * 0.5 : 0;
         const finalAct = Math.min(act + boost, 1);
-
+ 
         const col = l === 0 ? C.amber : l === layers.length - 1 ? C.green : C.violet;
         const r   = n.r + finalAct * 3;
-
+ 
         // outer halo
         const halo = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, r * 5);
         halo.addColorStop(0,   rgba(col, finalAct * 0.35));
@@ -1030,14 +1115,14 @@ metricEls.forEach(el => metricIo.observe(el));
         ctx.arc(n.x, n.y, r * 5, 0, Math.PI * 2);
         ctx.fillStyle = halo;
         ctx.fill();
-
+ 
         // ring
         ctx.beginPath();
         ctx.arc(n.x, n.y, r + 2, 0, Math.PI * 2);
         ctx.strokeStyle = rgba(col, 0.25 + finalAct * 0.4);
         ctx.lineWidth   = 1;
         ctx.stroke();
-
+ 
         // core
         const core = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, r);
         core.addColorStop(0,   rgba([255,255,255], 0.9 * finalAct));
@@ -1050,7 +1135,7 @@ metricEls.forEach(el => metricIo.observe(el));
       }
     }
   }
-
+ 
   // faint layer labels
   function drawLabels() {
     const labels = ['Input', 'Hidden', 'Hidden', 'Hidden', 'Hidden', 'Output'];
@@ -1063,7 +1148,7 @@ metricEls.forEach(el => metricIo.observe(el));
     }
     ctx.textAlign = 'left';
   }
-
+ 
   function frame(ts) {
     ctx.clearRect(0, 0, W, H);
     drawEdges();
@@ -1072,7 +1157,7 @@ metricEls.forEach(el => metricIo.observe(el));
     drawLabels();
     requestAnimationFrame(frame);
   }
-
+ 
   window.addEventListener('resize', resize);
   resize();
   requestAnimationFrame(frame);
@@ -1080,3 +1165,9 @@ metricEls.forEach(el => metricIo.observe(el));
 </script>
 </body>
 </html>
+ 
+
+
+
+
+
